@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="157.0" prefWidth="600.0" style="-fx-background-color: #111111;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <Label fx:id="songTitle" alignment="CENTER" prefHeight="100.0" prefWidth="600.0" text="MP3 Player" textAlignment="CENTER" textFill="#374ebf">
+         <font>
+            <Font size="45.0" />
+         </font>
+      </Label>
+      <ProgressBar fx:id="songProgressBar" layoutY="100.0" prefHeight="18.0" prefWidth="600.0" progress="0.0" />
+      <Button fx:id="playBtn" layoutY="118.0" mnemonicParsing="false" onAction="#playMedia" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));;" text="PLAY" textAlignment="CENTER" textFill="#ccd6ff">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="pauseBtn" layoutX="65.0" layoutY="118.0" mnemonicParsing="false" onAction="#pauseMedia" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));" text="PAUSE" textFill="#ccd6ff">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="resetBtn" layoutX="142.0" layoutY="118.0" mnemonicParsing="false" onAction="#resetMedia" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));" text="RESET" textFill="#ccd6ff">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="prevBtn" layoutX="214.0" layoutY="118.0" mnemonicParsing="false" onAction="#prevMedia" prefHeight="39.0" prefWidth="82.0" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));" text="PREVIOUS" textFill="#ccd6ff">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="nextBtn" layoutX="296.0" layoutY="118.0" mnemonicParsing="false" onAction="#nextMedia" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));" text="NEXT" textFill="#ccd6ff">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="speedBox" layoutX="363.0" layoutY="118.0" onAction="#changeSpeed" prefHeight="39.0" prefWidth="77.0" promptText="SPEED" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));" />
+      <Slider fx:id="volSlider" layoutX="440.0" layoutY="118.0" max="100.0" prefHeight="39.0" prefWidth="161.0" showTickMarks="true" style="-fx-background-color: #090a0c,        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),        linear-gradient(#20262b, #191d22),        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));" value="50.0" />
+   </children>
+</AnchorPane>
