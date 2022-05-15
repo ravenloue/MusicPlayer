@@ -1,2 +1,2 @@
 # MusicPlayer
- Simple music player app from tutorial by Brocodes on Youtube
+ Simple music player app from a tutorial by Brocodes on Youtube
