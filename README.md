@@ -21,11 +21,11 @@ While working on projects for my Java Programming 2 course, I noticed that the a
 
 Users should be able to:
 - Basic playlist controls
- - Play a song
- - Pause the song
- - Reset the song to the beginning
- - Change to the previous song
- - Skip to the next song
+  - Play a song
+  - Pause the song
+  - Reset the song to the beginning
+  - Change to the previous song
+  - Skip to the next song
 - Adjust the speed of playback
 - Adjust the volume
 
